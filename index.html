@@ -517,11 +517,15 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
- <script>
+<script>
   window.addEventListener("load", function () {
     setTimeout(function () {
-      document.querySelector('#about').scrollIntoView({
-        behavior: 'smooth'
+      const about = document.getElementById("about");
+      const y = about.offsetTop;
+
+      window.scrollTo({
+        top: y,
+        behavior: "smooth"
       });
     }, 300);
   });
