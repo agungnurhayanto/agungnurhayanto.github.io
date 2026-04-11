@@ -1193,3 +1193,11 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+
+body {
+  overflow-y: hidden;
+}
+
+body.loaded {
+  overflow-y: auto;
+}
